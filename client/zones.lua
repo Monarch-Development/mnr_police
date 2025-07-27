@@ -15,7 +15,7 @@ local function onExit(self)
     ---@todo Delete Points
 end
 
-for name, data in pairs(stations) do
+for name, data in pairs(zones) do
     lib.zones.box({
         name = name,
         coords = vec3(data.coords.x, data.coords.y, data.coords.z),
