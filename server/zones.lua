@@ -28,6 +28,6 @@ lib.callback.register("mnr_police:server:EnteredZone", function(source, name)
     local playerPed = GetPlayerPed(source)
     local playerCoords = GetEntityCoords(playerPed)
     local isInside = inside(playerCoords, name)
-    
+
     return isInside
 end)
